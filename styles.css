@@ -7,8 +7,34 @@
   padding: 0;
 }
 
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --paragraph-color: #555555;
+  --color-1: #000000;
+  --color-2: #ffffff;
+  --color-3: #808080;
+  --border: #353535;
+  --border-color: #a3a3a3;
+  --text-dec: #b5b5b5;
+}
+
+.darkmode {
+  --background-color: #121212; /* Dark background */
+  --text-color: #ffffff; /* Light text */
+  --paragraph-color: #aaaaaa; /* Lighter gray for paragraphs */
+  --color-1: #ffffff; /* Light color for accents */
+  --color-2: #000000; /* Dark color for elements */
+  --color-3: #4d4d4d; /* Darker gray for better visibility */
+  --border: #a3a3a3; /* Lighter border color */
+  --border-color: #353535; /* Darker border color */
+  --text-dec: #7f7f7f; /* Muted text decoration color */
+}
+
 body {
   font-family: "Poppins", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 html {
@@ -16,7 +42,7 @@ html {
 }
 
 p {
-  color: rgb(85, 85, 85);
+  color: var(--paragraph-color);
 }
 
 /* TRANSITION */
@@ -46,16 +72,16 @@ nav {
 }
 
 a {
-  color: black;
+  color: var(--color-1);
   text-decoration: none;
-  text-decoration-color: white;
+  text-decoration-color: var(--color-2);
 }
 
 a:hover {
-  color: grey;
+  color: var(--color-3);
   text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
+  text-decoration-color: var(--text-dec);
 }
 
 .logo {
@@ -89,7 +115,7 @@ a:hover {
 .hamburger-icon span {
   width: 100%;
   height: 2px;
-  background-color: black;
+  background-color: var(--color-1);
   transition: all 0.3s ease-in-out;
 }
 
@@ -97,19 +123,20 @@ a:hover {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: white;
+  background-color: var(--color-2);
   width: fit-content;
   max-height: 0;
   overflow: hidden;
   transition: all 0.3 ease-in-out;
+  border-radius: 10px;
 }
 
 .menu-links a {
   display: block;
   padding: 10px;
   text-align: center;
-  font-size: 1.5rem;
-  color: black;
+  font-size: 1.25rem;
+  color: var(--color-1);
   text-decoration: none;
   transition: all 0.3 ease-in-out;
 }
@@ -211,6 +238,13 @@ section {
 .icon {
   cursor: pointer;
   height: 2rem;
+  fill: var(--color-1);
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.linked-in-icon path {
+  fill: var(--color-1);
 }
 
 /* BUTTONS */
@@ -227,22 +261,23 @@ section {
   padding: 1rem;
   width: 8rem;
   border-radius: 2rem;
+  color: var(--color-1);
 }
 
 .btn-color-1,
 .btn-color-2 {
-  border: 0.1rem solid rgb(85, 85, 85);
+  border: 0.1rem solid var(--border);
   cursor: pointer;
 }
 
 .btn-color-1,
 .btn-color-2:hover {
-  background-color: rgb(53, 53, 53);
-  color: white;
+  background-color: var(--border);
+  color: var(--color-2);
 }
 
 .btn-color-1:hover {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--color-1);
 }
 
 .btn-color-2 {
@@ -250,7 +285,7 @@ section {
 }
 
 .btn-color-2:hover {
-  border: 0.1rem solid rgb(255, 255, 255);
+  border: 0.1rem solid var(--color-2);
 }
 
 .btn-container {
@@ -287,15 +322,18 @@ section {
   position: absolute;
   right: -5rem;
   bottom: 2.5rem;
+  fill: var(--color-1);
+  width: 3rem;
+  height: 3rem;
 }
 
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  background: white;
+  background: var(--color-2);
   border-radius: 2rem;
-  border: 0.1rem solid rgb(53, 53, 53);
-  border-color: rgb(163, 163, 163);
+  border: 0.1rem solid var(--border);
+  border-color: var(--border-color);
   text-align: center;
 }
 
@@ -317,7 +355,7 @@ section {
 }
 
 .experience-sub-title {
-  color: rgb(85, 85, 85);
+  color: rgb(84, 84, 84);
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
@@ -356,8 +394,8 @@ article .icon {
 }
 
 .color-container {
-  border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
+  border-color: var(--border-color);
+  background: var(--color-2);
 }
 
 .project-img {
@@ -368,12 +406,12 @@ article .icon {
 
 .project-title {
   margin: 1rem;
-  color: black;
+  color: var(--color-1);
 }
 
 .project-btn {
-  color: black;
-  border-color: rgb(163, 163, 163);
+  color: var(--color-1);
+  border-color: var(--border-color);
 }
 
 /* CONTACT SECTION */
@@ -389,9 +427,9 @@ article .icon {
   display: flex;
   justify-content: center;
   border-radius: 2rem;
-  border: 0.1rem solid rgb(53, 53, 53);
-  border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
+  border: 0.1rem solid var(--border);
+  border-color: var(--border-color);
+  background: var(--color-2);
   margin: 2rem auto;
   padding: 0.5rem;
 }
@@ -425,4 +463,38 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+/* DARKMODE */
+
+#theme-switch {
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 32px;
+  right: 35px;
+  cursor: pointer;
+  border: none;
+}
+
+#theme-switch svg {
+  fill: var(--color-1);
+}
+
+#theme-switch svg:last-child {
+  display: none;
+}
+
+.darkmode #theme-switch svg:first-child {
+  display: none;
+}
+
+.darkmode #theme-switch svg:last-child {
+  display: block;
 }
