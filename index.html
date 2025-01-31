@@ -65,7 +65,7 @@
 
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="Donovan Delport Profile picture" />
+        <img src="./assets/profile-circle.png" alt="Donovan Delport Profile picture" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello I'm</p>
@@ -95,7 +95,7 @@
             viewBox="-143 145 512 512"
             xml:space="preserve"
             class="icon"
-            onclick="location.href='https://linkedin.com/'"
+            onclick="window.open('https://www.linkedin.com/in/donovan-delport/', '_blank')"
           >
             <path
               d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M41.4,508.1H-8.5V348.4h49.9
@@ -120,7 +120,7 @@
             xmlns:xlink="http://www.w3.org/1999/xlink"
             class="icon linked-in-icon"
             fill="#000000"
-            onclick="location.href='https://github.com/'"
+            onclick="window.open('https://github.com/ddelportgit', '_blank')"
           >
             <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
               <g
@@ -146,7 +146,7 @@
       <h1 class="title">About Me</h1>
       <div class="section-container">
         <div class="section__pic-container">
-          <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic" />
+          <img src="./assets/profile-bw.png" alt="Profile picture" class="about-pic" />
         </div>
         <div class="about-details-container">
           <div class="about-containers">
@@ -289,75 +289,55 @@
                   />
                 </svg>
                 <div>
-                  <h3>SASS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <!-- <img src="./assets/checkmark.png" alt="Experience Icon" class="icon" /> -->
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="24px"
-                  viewBox="0 -960 960 960"
-                  width="24px"
-                  fill="#e8eaed"
-                  alt="Experience Icon"
-                  class="icon"
-                >
-                  <path
-                    d="m424-296 282-282-56-56-226 226-114-114-56 56 170 170Zm56 216q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
-                  />
-                </svg>
-                <div>
                   <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <!-- <img src="./assets/checkmark.png" alt="Experience Icon" class="icon" /> -->
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="24px"
-                  viewBox="0 -960 960 960"
-                  width="24px"
-                  fill="#e8eaed"
-                  alt="Experience Icon"
-                  class="icon"
-                >
-                  <path
-                    d="m424-296 282-282-56-56-226 226-114-114-56 56 170 170Zm56 216q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
-                  />
-                </svg>
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <!-- <img src="./assets/checkmark.png" alt="Experience Icon" class="icon" /> -->
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="24px"
-                  viewBox="0 -960 960 960"
-                  width="24px"
-                  fill="#e8eaed"
-                  alt="Experience Icon"
-                  class="icon"
-                >
-                  <path
-                    d="m424-296 282-282-56-56-226 226-114-114-56 56 170 170Zm56 216q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
-                  />
-                </svg>
-                <div>
-                  <h3>Material UI</h3>
                   <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <!-- <img src="./assets/checkmark.png" alt="Experience Icon" class="icon" /> -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="#e8eaed"
+                  alt="Experience Icon"
+                  class="icon"
+                >
+                  <path
+                    d="m424-296 282-282-56-56-226 226-114-114-56 56 170 170Zm56 216q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
+                  />
+                </svg>
+                <div>
+                  <h3>React JS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <!-- <img src="./assets/checkmark.png" alt="Experience Icon" class="icon" /> -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="#e8eaed"
+                  alt="Experience Icon"
+                  class="icon"
+                >
+                  <path
+                    d="m424-296 282-282-56-56-226 226-114-114-56 56 170 170Zm56 216q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
+                  />
+                </svg>
+                <div>
+                  <h3>Git / GitHub</h3>
+                  <p>Basic</p>
                 </div>
               </article>
             </div>
           </div>
 
           <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
+            <h2 class="experience-sub-title">Design Tools</h2>
             <div class="article-container">
               <article>
                 <!-- <img src="./assets/checkmark.png" alt="Experience Icon" class="icon" /> -->
@@ -375,68 +355,28 @@
                   />
                 </svg>
                 <div>
-                  <h3>PostgreSQL</h3>
+                  <h3>Canva Pro</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <!-- <img src="./assets/checkmark.png" alt="Experience Icon" class="icon" /> -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="#e8eaed"
+                  alt="Experience Icon"
+                  class="icon"
+                >
+                  <path
+                    d="m424-296 282-282-56-56-226 226-114-114-56 56 170 170Zm56 216q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
+                  />
+                </svg>
+                <div>
+                  <h3>Figma</h3>
                   <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <!-- <img src="./assets/checkmark.png" alt="Experience Icon" class="icon" /> -->
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="24px"
-                  viewBox="0 -960 960 960"
-                  width="24px"
-                  fill="#e8eaed"
-                  alt="Experience Icon"
-                  class="icon"
-                >
-                  <path
-                    d="m424-296 282-282-56-56-226 226-114-114-56 56 170 170Zm56 216q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
-                  />
-                </svg>
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <!-- <img src="./assets/checkmark.png" alt="Experience Icon" class="icon" /> -->
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="24px"
-                  viewBox="0 -960 960 960"
-                  width="24px"
-                  fill="#e8eaed"
-                  alt="Experience Icon"
-                  class="icon"
-                >
-                  <path
-                    d="m424-296 282-282-56-56-226 226-114-114-56 56 170 170Zm56 216q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
-                  />
-                </svg>
-                <div>
-                  <h3>Express JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <!-- <img src="./assets/checkmark.png" alt="Experience Icon" class="icon" /> -->
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="24px"
-                  viewBox="0 -960 960 960"
-                  width="24px"
-                  fill="#e8eaed"
-                  alt="Experience Icon"
-                  class="icon"
-                >
-                  <path
-                    d="m424-296 282-282-56-56-226 226-114-114-56 56 170 170Zm56 216q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
-                  />
-                </svg>
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
                 </div>
               </article>
             </div>
@@ -471,19 +411,23 @@
         <div class="about-containers">
           <div class="details-container color-container">
             <div class="article-container">
-              <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+              <img
+                src="./assets/portfolio-project-screenshots.png"
+                alt="Project 1"
+                class="project-img"
+              />
             </div>
-            <h2 class="experience-sub-title project-title">Project 1</h2>
+            <h2 class="experience-sub-title project-title">Bible Website</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="window.open('https://github.com/ddelportgit/bible-app-1', '_blank')"
               >
                 GitHub
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="window.open('https://ddelportgit.github.io/bible-app-1/', '_blank')"
               >
                 Live Demo
               </button>
@@ -572,7 +516,7 @@
               d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"
             />
           </svg>
-          <p><a href="mailto:examplemail@gmail.com">Examplemail@gmail.com</a></p>
+          <p><a href="mailto:ddelport101@gmail.com">ddelport101@gmail.com</a></p>
         </div>
         <div class="contact-info-container">
           <!-- <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" /> -->
@@ -596,7 +540,7 @@ c-1.4,3.4-1.2,8.2-1.2,13.1v86.3H71.8c0,0,0.7-146.4,0-159.7h56.1v25.1c3.3-11,21.2
 "
             />
           </svg>
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+          <p><a href="https://www.linkedin.com/in/donovan-delport/" target="_blank">LinkedIn</a></p>
         </div>
       </div>
     </section>
